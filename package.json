@@ -1,0 +1,40 @@
+{
+  "name": "oyster-collector",
+  "version": "0.0.1",
+  "description": "YouTube 공식 API를 사용하여 특정 영상의 모든 댓글 및 답글을 받아옵니다.",
+  "keywords": [
+    "youtube",
+    "유튜브",
+    "댓글",
+    "답글"
+  ],
+  "homepage": "https://github.com/fifoqueue/oyster-collector#readme",
+  "bugs": {
+    "url": "https://github.com/fifoqueue/oyster-collector/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fifoqueue/oyster-collector.git"
+  },
+  "license": "AGPL-3.0-or-later",
+  "author": "fifoqueue",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "merge": "node merge-comments.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@discordjs/collection": "^2.1.1",
+    "axios": "^1.8.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "eslint": "8",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0"
+  }
+}
